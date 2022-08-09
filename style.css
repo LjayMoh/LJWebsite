@@ -12,11 +12,15 @@
 }
 
 .heading {
-    color: rgb(246, 242, 237);
+    color: rgb(235, 234, 233);
     font-size: 30px;
     font-weight: bold;
     line-height: 80px;
     margin: 0 40px;
+}
+
+.heading span{
+    color:rgb(77, 249, 249);
 }
 
 nav ul {
@@ -234,7 +238,7 @@ h5{
 
 .ref{
     font-size: 19px;
-
+    margin-left: 9px;
 }
 
 .ref span{
@@ -288,12 +292,16 @@ h5{
 
 .footer-section{
     flex: 1;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 .contact span{
     font-size: 1.1em;
     margin-bottom: 10px;
+}
+
+.socials{
+    margin:0px 5px;
 }
 
 .socials a{
@@ -315,6 +323,12 @@ h5{
     transition: all .2s;
 }
 
+.def{
+    margin: 0px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .footer-bottom{
     background-color: rgba(89, 87, 87, 0.911);
     color: aqua;
@@ -324,3 +338,140 @@ h5{
     position: relative;
     padding: 20px;
 }
+
+/*------------- Week1 Page --------*/
+
+.week1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 350vh;
+}
+
+.navi{
+    background: rgba(163, 160, 160, 0.015);
+    backdrop-filter: blur(2px);
+    height: 100px;
+    width: 100%;
+}
+
+.navi ul {
+    float: right;
+    margin-right: 40px;
+    padding: 20px;
+}
+
+.navi ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.navi ul li a{
+    font-size: 20px;
+    color:rgb(38, 243, 247);
+}
+
+.navi ul li a:hover{
+    color: white;
+    margin-left: 3px;
+}
+
+.post1{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 20px;
+}
+
+.art1{
+    background: rgba(30, 30, 30, 0.516);
+    backdrop-filter: blur(2px);
+    min-height: 100%;
+}
+
+.art1 p{
+    margin: 15px;
+    font-size: 19px;
+    color: rgb(222, 220, 220);
+}
+
+p span{
+    text-decoration: underline;
+}
+
+.subject{
+    font-size: 25px;
+    color: rgb(240, 232, 221);
+    margin: 0px 10px;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: rgb(240, 232, 221);
+    margin: 0px 10px;
+}
+
+.cite{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(244, 239, 234, 0.864);
+    margin: 5px 5px;
+    padding: 2px;
+}
+
+.foot{
+    font-size: 20px;
+    color: rgb(243, 233, 222);
+    margin: 20px 10px;
+    padding: 2px;
+}
+
+.blogs ul a{
+    display:block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: rgb(203, 225, 230);
+    text-decoration: none;
+}
+
+.blogs ul a:hover{
+    color: black;
+    text-decoration: underline;
+    transition: all .2s;
+}
+
+.guides ul a{
+    display:block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: rgb(221, 239, 243);
+}
+
+.guides ul a:hover{
+    color: black;
+    text-decoration: dotted;
+    transition: all .2s;
+}
+
+.url-ref{
+    font-size: 15px;
+    color: rgb(60, 249, 246);
+    text-decoration: none;
+}
+
+.url-ref:hover {
+    font-size: 15px;
+    color: rgb(247, 251, 251);
+    text-decoration: none;
+}
+
+.footer-content p{
+    font-size: 12px;
+}
+
+
+
+
+
+
