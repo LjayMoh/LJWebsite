@@ -1,0 +1,326 @@
+.home {
+    font-family: 'Times New Roman', Times, serif;
+    background: url(images/ana-paula-grimaldi-Nri_o3wJXZQ-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+
+.nav {
+    background: rgba(163, 160, 160, 0.086);
+    backdrop-filter: blur(2px);
+    height: 90px;
+}
+
+.heading {
+    color: rgb(246, 242, 237);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: aqua;
+    border: 2px;
+    padding: 5px 10px;
+    background-color: rgba(10, 58, 61, 0.84);
+}
+
+a.active {
+    background: rgba(10, 58, 61, 0.553);
+    padding: 5px 10px;
+    border-radius: 0px;
+}
+
+.bars{
+    font-size: 25px;
+    float: right;
+    margin-right: 40px;
+    padding: 19px;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*------------- Post slider --------*/
+
+.blog-slider {
+    position: relative;
+}
+
+.title{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 40px;
+    margin: 30px auto;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color:rgb(4, 45, 56);
+    cursor: pointer;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color:rgb(4, 45, 56);
+    cursor: pointer;
+}
+
+.next:hover{
+    color: rgb(73, 108, 108);
+    font-size: 25px;
+}
+
+.prev:hover{
+    color: rgb(73, 108, 108);
+    font-size: 25px;
+}
+
+.post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.post{
+    width: 300px;
+    height: 335px;
+    margin: 0px 30px;
+    display: inline-block;
+    background: #eef6f6b0;
+    border-radius: 3px;
+}
+
+.post:hover{
+    display: inline-block;
+    background: #cecece27;
+    backdrop-filter: blur(1px);
+    border-radius: 3px;
+}
+
+.card:hover{
+    background: rgba(167, 164, 164, 0.041);
+    backdrop-filter: blur(1px);
+    width: 300px;
+    height: 250px;
+    margin: 0px 30px;
+}
+
+.slider-img{
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.slider-img:hover{
+    margin: 5px 5px;
+    padding: 5px 5px;
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.info{
+    padding: 5px;
+}
+
+h2 a{
+    margin: 2px;
+    font-size: 15px;
+    color: rgb(4, 4, 4);
+}
+
+h2 a:hover{
+    color:rgb(5, 58, 58);
+    text-decoration: none;
+}
+
+.site-slider {
+    position: relative;
+}
+
+.site{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.site-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 20px 100px;
+}
+
+.web{
+    width: 250px;
+    height: 100px;
+    margin: 0px 80px;
+    display: inline-block;
+    background: rgba(212, 231, 236, 0.705);
+}
+
+.web:hover{
+    background: rgba(161, 160, 160, 0.179);
+}
+
+.link:hover{
+    background: rgba(161, 160, 160, 0.179);
+}
+
+.site-img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.site-img:hover{
+    width: 100%;
+    height: 250px;
+    padding: 10px 5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+h3 a{
+    margin: 15px 15px;
+    font-size: 20px;
+    color: rgb(47, 46, 46);
+    text-decoration: none;
+}
+
+h3 a:hover{
+    color:rgb(245, 251, 251);
+    text-decoration: underline;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.ref{
+    font-size: 19px;
+
+}
+
+.ref span{
+    color:rgb(82, 227, 227);
+}
+
+.reference p{
+    font-size: 15px
+}
+
+.contact{
+    margin: 0px 5px;
+}
+
+.contact-input{
+    background: rgb(222, 217, 217);
+    color: rgb(26, 26, 26);
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    padding: 5px;
+    display: block;
+    border: none;
+}
+
+.contact-input:hover{
+    background: rgba(88, 86, 86, 0.485);
+    transition: .2s;
+}
+
+.btn a{
+    color:black;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: rgb(30, 87, 84);
+    transition: .2s;
+}
+
+.footer{
+    color:rgb(131, 193, 212);
+    height: 80px;
+    position: relative;
+}
+
+.footer-content{
+    height:390px;
+    display: flex;
+    background-color: rgba(106, 106, 106, 0.873);
+}
+
+.footer-section{
+    flex: 1;
+    margin-left: 2px;
+}
+
+.contact span{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.socials a{
+    border: 1px solid rgb(156, 154, 154);
+    color: whitesmoke;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    padding-top: 2px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 2px;
+}
+
+.socials a:hover{
+    border: 1px solid white;
+    color: rgb(253, 104, 248);
+    transition: all .2s;
+}
+
+.footer-bottom{
+    background-color: rgba(89, 87, 87, 0.911);
+    color: aqua;
+    margin: 5px;
+    height: 15px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}

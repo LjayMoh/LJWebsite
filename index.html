@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
+    <section class="home">
         <header>
             <nav class="nav">
                 <label for="heading" class="heading">Interactive Media</label>
@@ -26,38 +26,70 @@
         </header>
 
         <main>
-            <section class="blog">
-                <div class="blog-wrapper">
+          <section class="blog">
+            <div class="blog-wrapper">
 
-                    <div class="blog-slider">
+              <div class="blog-slider">
+                <header><h1 class="title">Blog Posts</h1></header>
+                <i class="fas fa-chevron-right next"></i>
+                <i class="fas fa-chevron-left prev"></i>
 
-                        <header><h1 class="heading">Blog Posts</h1></header>
-                        <i class="fas fa-chevron-right next"></i>
-                        <i class="fas fa-chevron-left prev"></i>
-
-                        <div class="post-wrapper">
-
-                            <div class="post">
-                                <a class="card" href="week1.html">
-                                  <img src="images/mike-cho-p5gRFhkcva0-unsplash.jpg" class="slider-img">
-                                  <div class="info">
-                                    <h2><a href="week1.html">Overview of Data Visualization</a></h2>
-                                    <i class="far fa-user"> Lerato Mohapi</i>
-                                    &nbsp;
-                                    <i class="far fa-calendar"> 08 Aug,2022</i>
-                                  </div>
-                                </a>
-                              </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="post-wrapper">
+                  <div class="post">
+                    <a href="week1.html">
+                      <img src="images/mike-cho-p5gRFhkcva0-unsplash.jpg" class="slider-img">
+                      <div class="info">
+                        <h2><a href="week1.html">Overview of Data Visualization</a></h2>
+                        <i class="far fa-user"> Lerato Mohapi</i>
+                        &nbsp;
+                        <i class="far fa-calendar"> 08 Aug, 2022</i>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
+          </section>
 
-            <section class="design">
+          <section class="design">
+            <div class="design-wrapper">
 
+              <div class="site-slider">
+                <header><h1 class="site">Web Design</h1></header>
+                <i class="fas fa-chevron-right next"></i>
+                <i class="fas fa-chevron-left prev"></i>
+  
+                <div class="site-wrapper">
+                  <div class="web">
+                    <a class="link" href="wireframes.html">
+                      <img src="images/albina-white-tZKbV8pO61M-unsplash.jpg" class="site-img">
+                      <div class="what">
+                        <h3><a href="wireframes.html">Wireframes</a></h3>
+                      </div>
+                    </a> 
+                  </div>
+    
+                    <div class="web">
+                      <a class="link" href="styleguide.html">
+                        <img src="images/amine-m-siouri-Isk8wx8Pxis-unsplash.jpg" class="site-img">
+                        <div class="what">
+                          <h3><a href="styleguide.html">Styleguide</a></h3>
+                        </div>
+                      </a>  
+                    </div>
+                      
+                    <div class="web">
+                      <a class="link" href="reflection.html">
+                        <img src="images/hello.jpg" class="site-img">
+                        <div class="what">
+                          <h3><a href="reflection.html">Reflections</a></h3>
+                        </div>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+
+            </div>
             </section>
         </main>
     </section>
@@ -69,38 +101,37 @@
 </body>
 
 <footer>
-    <div class="footer-content">
-        <div class="footer-section reference">
-          <h1 class="ref"><span>Interactive</span>Media</h1>
-          <p>Interactive Media is creative and mind-blowing ways that people share ideas and information
-             using innovated technology.</p>
-          <div class="contact">
-            <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
-          </div>
-         <div class="socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-  
-        <div class="footer-section contact-us">
-          <h2 class="foot">Contact Us</h2>
-          <br>
-          <form action="index.html" method="post">
-            <input type="name" name="name" class="text-input contact-input" placeholder="Your name and surname...">
-            <textarea name="messge" class="text-input contact-input" placeholder="Your feedback..."></textarea>
-            <button onclick="addComment()" type="submit" class="btn">
-              <i class="fas fa-comment-dots"></i> <a href="index.html"> Send</a>
-            </button>
-          </form>
-        </div>
+  <div class="footer-content">
+    <div class="footer-section reference">
+      <h4 class="ref"><span>Interactive</span>Media</h4>
+      <p>Interactive Media is creative and mind-blowing ways that people share ideas and information
+        using innovated technology.</p>
+      <div class="contact">
+        <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
       </div>
-      
-  
-    <div class="footer-bottom">
-          &copy; interactivemedia.com | Designed by Lerato Mohapi
-        </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
+  
+    <div class="footer-section contact-us">
+      <h5 class="foot">Contact Us</h5>
+      <br>
+      <form action="index.html" method="post">
+        <input type="name" name="name" class="text-input contact-input" placeholder="Your name and surname...">
+        <textarea name="messge" class="text-input contact-input" placeholder="Your feedback..."></textarea>
+        <button onclick="addComment()" type="submit" class="btn">
+        <i class="fas fa-comment-dots"></i> <a href="index.html"> Send</a>
+        </button>
+      </form>
+    </div>
+  </div>
+   
+  <div class="footer-bottom">
+    &copy; interactivemedia.com | Designed by Lerato Mohapi
+  </div>
+
 </footer>
 </html>
