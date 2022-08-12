@@ -1,4 +1,4 @@
-.home {
+.body {
     font-family: 'Times New Roman', Times, serif;
     background: url(images/ana-paula-grimaldi-Nri_o3wJXZQ-unsplash.jpg) no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: aqua;
+    color: rgb(107, 230, 230);
     border: 2px;
     padding: 5px 10px;
     background-color: rgba(10, 58, 61, 0.84);
@@ -63,10 +63,6 @@ a.active {
     display: none;
 }
 
-#check{
-    display: none;
-}
-
 /*------------- Post slider --------*/
 
 .blog-slider {
@@ -85,7 +81,7 @@ a.active {
 .next{
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 40px;
     font-size: 2em;
     color:rgb(4, 45, 56);
     cursor: pointer;
@@ -94,7 +90,7 @@ a.active {
 .prev{
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 40px;
     font-size: 2em;
     color:rgb(4, 45, 56);
     cursor: pointer;
@@ -102,17 +98,25 @@ a.active {
 
 .next:hover{
     color: rgb(73, 108, 108);
-    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .prev:hover{
     color: rgb(73, 108, 108);
-    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .post-wrapper{
     width: 84%;
-    height: 350px;
+    height: 360px;
     margin: 0px auto;
     overflow: hidden;
 }
@@ -157,6 +161,11 @@ a.active {
     border-top-right-radius: 4px;
 }
 
+.open:hover{
+    background: rgba(167, 164, 164, 0.041);
+    cursor: pointer;
+}
+
 .info{
     padding: 5px;
 }
@@ -183,9 +192,45 @@ h2 a:hover{
     text-align: center;
 }
 
+.nxt{
+    position: absolute;
+    top: 48%;
+    right: 100px;
+    font-size: 2em;
+    color:rgb(4, 45, 56);
+    cursor: pointer;
+}
+
+.prv{
+    position: absolute;
+    top: 48%;
+    left: 100px;
+    font-size: 2em;
+    color:rgb(4, 45, 56);
+    cursor: pointer;
+}
+
+.nxt:hover{
+    position: absolute;
+    top: 48%;
+    right: 100px;
+    font-size: 1.5em;
+    color: rgb(63, 104, 104);
+    cursor: pointer;
+}
+
+.prv:hover{
+    position: absolute;
+    top: 48%;
+    left: 100px;
+    font-size: 2em;
+    color: rgb(63, 104, 104);
+    cursor: pointer;
+}
+
 .site-wrapper{
-    width: 84%;
-    height: 350px;
+    width: 85%;
+    height: 360px;
     margin: 20px 100px;
 }
 
@@ -324,7 +369,7 @@ h5{
 }
 
 .def{
-    margin: 0px 5px;
+    margin: 0px 2px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -337,6 +382,179 @@ h5{
     text-align: center;
     position: relative;
     padding: 20px;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .heading {
+        color: rgb(235, 234, 233);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 250px;
+    }
+
+    .bars{
+        display: block; 
+        color: rgb(37, 42, 42);
+    }
+    
+    .heading span{
+        color:rgb(77, 249, 249);
+    }
+
+    .nav {
+        background: rgba(163, 160, 160, 0);
+        backdrop-filter: blur(2px);
+        height: 45px;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        background-color: rgba(5, 65, 103, 0.393);
+        height: .5vh;
+        text-align: center;
+        top: 55px;
+        left: -120%;
+        transition: all 1.5s;
+    }
+
+    nav ul li{
+        display:inline-block;
+        padding-bottom: 1px;
+        margin-top: 2px;
+    }
+
+    nav ul li a{
+        color: rgb(213, 204, 204);
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 100px;
+        margin: 50px auto;
+    }
+    
+    .next{
+        position: absolute;
+        top: 60%;
+        right: 20px;
+        font-size: 1.5em;
+        color:rgb(4, 45, 56);
+        cursor: pointer;
+    }
+    
+    .prev{
+        position: absolute;
+        top: 60%;
+        left: 20px;
+        font-size: 1.5em;
+        color:rgb(4, 45, 56);
+        cursor: pointer;
+    }
+    
+    .post-wrapper{
+        width: 90%;
+        height: 260px;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+    
+    .post{
+        width: 400px;
+        height: 235px;
+        margin: 0px 30px;
+        display: inline-block;
+        background: #eef6f6b0;
+        border-radius: 3px;
+    }
+
+    .slider-img{
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    h2 a{
+        margin: 2px;
+        font-size: 13px;
+        color: rgb(4, 4, 4);
+    }
+
+    .site{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .nxt{
+        position: absolute;
+        top: 48%;
+        right: 20px;
+        font-size: 1.5em;
+        color:rgb(4, 45, 56);
+        cursor: pointer;
+    }
+    
+    .prv{
+        position: absolute;
+        top: 48%;
+        left: 20px;
+        font-size: 1.5em;
+        color:rgb(4, 45, 56);
+        cursor: pointer;
+    }
+
+    .site-img{
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    
+    h3 a{
+        margin: 5px 5px;
+        font-size: 15px;
+        color: rgb(47, 46, 46);
+        text-decoration: none;
+    }
+
+    .site-wrapper{
+        width: 90%;
+        height: 200px;
+    }
+    
+    .web{
+        width: 400px;
+        height: 200px;
+        margin: 2px;
+        display: inline-block;
+        background: rgba(212, 231, 236, 0.705);
+    }
+
+    .reference p{
+        font-size: 15px
+    }
+    
+    .contact{
+        margin: 0px 5px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
 
 /*------------- Week1 Page --------*/
@@ -368,13 +586,14 @@ h5{
 }
 
 .navi ul li a{
-    font-size: 20px;
+    font-size: 15px;
     color:rgb(38, 243, 247);
 }
 
 .navi ul li a:hover{
     color: white;
     margin-left: 3px;
+    font-size: 18px;
 }
 
 .post1{
@@ -469,6 +688,137 @@ p span{
 .footer-content p{
     font-size: 12px;
 }
+
+/*------------- Wireframe Page --------*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.tag{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 20px;
+    color: rgb(203, 225, 230);
+}
+
+.frame-carousel{
+    width: 80%;
+    height: 80vh;
+    position: relative;
+}
+
+.frame-carousel ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.img-slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.img-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.img-slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-button{
+    position:absolute;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    top: 40%;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: rgb(239, 235, 235);
+    cursor: pointer;
+}
+
+.carousel-button:hover{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    background-color: rgba(240, 248, 255, 0.456);
+}
+
+.left{
+    left: 100px;
+}
+
+.right{
+    right: 100px;
+}
+
+/*------------- Styleguide Page --------*/
+
+.styleguide{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height:110vh;
+}
+
+.guide{
+    background: rgba(30, 30, 30, 0.344);
+    backdrop-filter: blur(1px);
+}
+ 
+.guide p{
+    margin: 10px;
+    font-size: 18px;
+}
+
+.guide p a{
+    color:rgba(0, 255, 255, 0.841);
+}
+
+.guide p a:hover{
+    color: rgb(168, 235, 235);
+}
+
+/*------------- Reflections Page --------*/
+
+.reflection{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 200vh;
+}
+
+.critic{
+    background: rgba(30, 30, 30, 0.344);
+    backdrop-filter: blur(1px);
+}
+
+.critic p{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.critic p a{
+    color:rgba(0, 255, 255, 0.841);
+}
+
+.critic p a:hover{
+    color: rgb(168, 235, 235);
+}
+
+
+
 
 
 
