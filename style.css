@@ -801,6 +801,8 @@ p span{
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 
 .img-slide img{
@@ -810,7 +812,9 @@ p span{
 }
 
 .img-slide[data-active] {
+    z-index: 1;
     opacity: 1;
+    transition-delay: 0ms;
 }
 
 .carousel-button{

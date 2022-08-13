@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="design.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
     <section class="body">
@@ -21,8 +24,8 @@
                 <label for="check" class="bars"><i class="fa-solid fa-bars"></i></label>
                 <ul>
                     <li><a href="index.html" class="active"><i class="fas fa-home"></i> Homepage</a></li>
-                    <li><a class="h-card" href="visualizations.html"><i class="fas fa-chart-line"></i> Data Visuals</a></li>
-                    <li><a class="h-card" href="art.html"><i class="fas fa-palette"></i> Data-Art</a></li> 
+                    <li><a class="u-url" href="visualizations.html"><i class="fas fa-chart-line"></i> Data Visuals</a></li>
+                    <li><a class="u-url" href="art.html"><i class="fas fa-palette"></i> Data-Art</a></li> 
                 </ul>
             </nav>
         </header>
@@ -38,49 +41,49 @@
 
                 <div class="post-wrapper">
                   <div class="post">
-                    <a class="open" href="1stpost.html">
+                    <a class="open" href="1stpost.html" class="u-url">
                       <img src="images/mike-cho-p5gRFhkcva0-unsplash.jpg" class="slider-img">
                       <div class="info">
                         <h2><a href="1stpost.html">Overview of Data Visualization</a></h2>
                         <i class="far fa-user"> Lerato Mohapi</i>
                         &nbsp;
-                        <i class="far fa-calendar"> 08 Aug, 2022</i>
+                        <i class="far fa-calendar" class="dt-start"> 08 Aug, 2022</i>
                       </div>
                     </a>
                   </div>
 
                   <div class="post">
-                    <a href="2ndpost.html">
+                    <a href="2ndpost.html" class="u-url">
                       <img src="images/a perfect mindful morning.jpg" class="slider-img">
                       <div class="info">
                         <h2><a href="2ndpost.html">To be written</a></h2>
                         <i class="far fa-user"> Lerato Mohapi</i>
                         &nbsp;
-                        <i class="far fa-calendar"> 29 Aug, 2022</i>
+                        <i class="far fa-calendar" class="dt-start"> 29 Aug, 2022</i>
                       </div>
                     </a>
                   </div>
 
                   <div class="post">
-                    <a class="open" href="3rdpost.html">
+                    <a class="open" href="3rdpost.html" class="u-url">
                       <img src="images/a perfect mindful morning.jpg" class="slider-img">
                       <div class="info">
                         <h2><a href="3rdpost.html">To be written</a></h2>
                         <i class="far fa-user"> Lerato Mohapi</i>
                         &nbsp;
-                        <i class="far fa-calendar"> 19 Sept, 2022</i>
+                        <i class="far fa-calendar" class="dt-start"> 19 Sept, 2022</i>
                       </div>
                     </a>
                   </div>
 
                   <div class="post">
-                    <a class="open" href="4thpost.html">
+                    <a class="open" href="4thpost.html" class="u-url">
                       <img src="images/a perfect mindful morning.jpg" class="slider-img">
                       <div class="info">
                         <h2><a href="4thpost.html">To be written</a></h2>
                         <i class="far fa-user"> Lerato Mohapi</i>
                         &nbsp;
-                        <i class="far fa-calendar"> 24 Oct, 2022</i>
+                        <i class="far fa-calendar" class="dt-start"> 24 Oct, 2022</i>
                       </div>
                     </a>
                   </div>
@@ -102,7 +105,7 @@
                     <a class="link" href="wireframes.html">
                       <img src="images/albina-white-tZKbV8pO61M-unsplash.jpg" class="site-img">
                       <div class="what">
-                        <h3><a href="wireframes.html">Wireframes</a></h3>
+                        <h3><a href="wireframes.html" class="u-url">Wireframes</a></h3>
                       </div>
                     </a> 
                   </div>
@@ -111,7 +114,7 @@
                       <a class="link" href="styleguide.html">
                         <img src="images/amine-m-siouri-Isk8wx8Pxis-unsplash.jpg" class="site-img">
                         <div class="what">
-                          <h3><a href="styleguide.html">Styleguide</a></h3>
+                          <h3><a href="styleguide.html" class="u-url">Styleguide</a></h3>
                         </div>
                       </a>  
                     </div>
@@ -120,7 +123,7 @@
                       <a class="link" href="reflection.html">
                         <img src="images/hello.jpg" class="site-img">
                         <div class="what">
-                          <h3><a href="reflection.html">Reflections</a></h3>
+                          <h3><a href="reflection.html" class="u-url">Reflections</a></h3>
                         </div>
                       </a>                      
                     </div>
@@ -131,11 +134,6 @@
             </section>
         </main>
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="design.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
 </body>
 
 <footer>
@@ -151,9 +149,9 @@
         <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
       </div>
       <div class="socials">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="u-url"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="u-url"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="u-url"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   
