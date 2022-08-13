@@ -399,7 +399,7 @@ h5{
 
     .bars{
         display: block; 
-        color: rgb(37, 42, 42);
+        color: rgb(77, 232, 232);
     }
     
     .heading span{
@@ -415,7 +415,6 @@ h5{
     nav ul{
         position: fixed;
         width: 100%;
-        background-color: rgba(5, 65, 103, 0.393);
         height: .5vh;
         text-align: center;
         top: 55px;
@@ -537,7 +536,7 @@ h5{
     }
     
     .web{
-        width: 400px;
+        width: 100%;
         height: 200px;
         margin: 2px;
         display: inline-block;
@@ -550,6 +549,11 @@ h5{
     
     .contact{
         margin: 0px 5px;
+    }
+
+    .contact-us{
+        margin: 145px 0px;
+        padding-left: 4px;
     }
 
     #check:checked ~ ul{
@@ -689,6 +693,30 @@ p span{
     font-size: 12px;
 }
 
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .week1{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 470vh;
+    }
+
+    .art1 p{
+        margin: 15px;
+        font-size: 15px;
+        color: rgb(222, 220, 220);
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
 /*------------- Week6 Page --------*/
 
 .week6{
@@ -810,6 +838,19 @@ p span{
     right: 8px;
 }
 
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .frame-carousel{
+        width: 50%;
+        height: 500px;
+        position: relative;
+        margin: 0px auto;
+    }
+}
+
 /*------------- Styleguide Page --------*/
 
 .styleguide{
@@ -838,6 +879,25 @@ p span{
     color: rgb(168, 235, 235);
 }
 
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .styleguide{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height:170vh;
+    }
+
+    .guide p{
+        margin: 10px;
+        font-size: 16px;
+    }
+}
+
 /*------------- Reflections Page --------*/
 
 .reflection{
@@ -864,6 +924,25 @@ p span{
 
 .critic p a:hover{
     color: rgb(168, 235, 235);
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .reflection{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 270vh;
+    }
+
+    .critic p{
+        margin: 10px;
+        font-size: 15px;
+    }
 }
 
 /*------------- Art Page --------*/
