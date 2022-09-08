@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critical Reflection</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,9 +20,9 @@
                 <label for="check" class="bars"><i class="fa-solid fa-bars"></i></label>
 
                 <ul>
-                    <li><a href="index.html" class="u-url"><i class="fas fa-home"></i> Homepage</a></li>
-                    <li><a class="u-url" href="visualizations.html"><i class="fas fa-chart-line"></i> Data Visuals</a></li>
-                    <li><a class="u-url" href="art.html"><i class="fas fa-palette"></i> Data-Art</a></li> 
+                    <li><a href="pages/index.html" class="u-url"><i class="fas fa-home"></i> Homepage</a></li>
+                    <li><a class="u-url" href="pages/visualizations.html"><i class="fas fa-chart-line"></i> Data Visuals</a></li>
+                    <li><a class="u-url" href="pages/art.html"><i class="fas fa-palette"></i> Data-Art</a></li> 
                 </ul>
             </nav>
         </header>
@@ -82,7 +82,7 @@
                         When I was designing my user interface, my focus was on making the design readable with good usability, a simple layout, with simple graphics. The first website I designed in first semester,
                         was not that appealing and its user interface design lacked a few things and was not too user friendly because there were times when the text blended in with the background image and this made it hard for the user to read the information.
                         I used the feedback I received as an advantage to help me design a better website this time, I will explain a few elements I used on my user interface below, just to note, I have explained the reasons behind the decisions I made on these elements 
-                        in the <a class="u-url" href="styleguide.html">Style guides</a> page.
+                        in the <a class="u-url" href="pages/styleguide.html">Style guides</a> page.
                     </p>
 
                     <p>
@@ -124,60 +124,60 @@
             </article>
         </main>
     </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section reference">
+                <header><h1 class="cite">Reference:</h1></header>
+                <ul>
+                    <li><p>GOLDBERG, P. 2022. A Crash Course in User Experience [+] Interface Design, 2022. Lecture Notes (WSOA3008A).Johannesburg: Wits School of Arts, University of the Witwatersrand.</p>
+                    <li><p>Indeed Tech Team. 2021. What Is a User Interface? (Definition, Types, and Examples). <em>Indeed</em>.Online.URL:https://www.indeed.com/career-advice/career-development/user-interface (Accessed 30 May 2022).<a class="url-ref" href="https://www.indeed.com/career-advice/career-development/user-interface" class="u-url">indeed</a></p>
+                    <li><p>PAPANEK, V. 1985. Chapter 1: What is Design? A Definition of the Function Complex. In: <em>Design for the Real World: Human Ecology and Social Change</em>. London: Thames & Hudson, pp.3-28.</p></li>
+                </ul>
+                <div class="contact">
+                  <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
+                </div>
+                <div class="socials">
+                  <a href="#" class="u-url"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="u-url"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="u-url"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-section blogs">
+                <header><h2 class="foot">Blogs</h2></header>
+                    <ul>
+                        <li><a class="u-url" href="pages/1stpost.html">Week1</a></li>
+                        <li><a class="u-url" href="pages/2ndpost.html">Week6</a></li>
+                        <li><a class="u-url" href="pages/3rdpost.html">Week8</a></li>
+                        <li><a class="u-url" href="pages/4thpost.html">Week13</a></li>
+                    </ul>  
+            </div>
+    
+            <div class="footer-section guides">
+                <header><h2 class="foot">Guides</h2></header>
+                    <ul>
+                        <li><a class="u-url" href="pages/wireframes.html">Wireframes</a>
+                        <li><a class="u-url" href="pages/styleguide.html">Styleguides</a></li> 
+                    </ul> 
+            </div>
+    
+            <div class="footer-section contact-us">
+                <h2 class="foot">Contact Us</h2>
+                <br>
+                <form action="index.html" method="post">
+                  <input type="name" name="name" class="text-input contact-input" placeholder="Your name and surname...">
+                  <textarea name="message" class="text-input contact-input" placeholder="Your feedback..."></textarea>
+                  <button onclick="addComment()" type="submit" class="btn">
+                    <i class="fas fa-comment-dots"></i> <a href="pages/index.html"> Send</a>
+                  </button>
+                </form>
+              </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; interactivemedia.com | Designed by Lerato Mohapi
+        </div>
+    </footer>
 </body>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-section reference">
-            <header><h1 class="cite">Reference:</h1></header>
-            <ul>
-                <li><p>GOLDBERG, P. 2022. A Crash Course in User Experience [+] Interface Design, 2022. Lecture Notes (WSOA3008A).Johannesburg: Wits School of Arts, University of the Witwatersrand.</p>
-                <li><p>Indeed Tech Team. 2021. What Is a User Interface? (Definition, Types, and Examples). <em>Indeed</em>.Online.URL:https://www.indeed.com/career-advice/career-development/user-interface (Accessed 30 May 2022).<a class="url-ref" href="https://www.indeed.com/career-advice/career-development/user-interface" class="u-url">indeed</a></p>
-                <li><p>PAPANEK, V. 1985. Chapter 1: What is Design? A Definition of the Function Complex. In: <em>Design for the Real World: Human Ecology and Social Change</em>. London: Thames & Hudson, pp.3-28.</p></li>
-            </ul>
-            <div class="contact">
-              <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
-            </div>
-            <div class="socials">
-              <a href="#" class="u-url"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="u-url"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="u-url"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-
-        <div class="footer-section blogs">
-            <header><h2 class="foot">Blogs</h2></header>
-                <ul>
-                    <li><a class="u-url" href="1stpost.html">Week1</a></li>
-                    <li><a class="u-url" href="2ndpost.html">Week6</a></li>
-                    <li><a class="u-url" href="3rdpost.html">Week8</a></li>
-                    <li><a class="u-url" href="4thpost.html">Week13</a></li>
-                </ul>  
-        </div>
-
-        <div class="footer-section guides">
-            <header><h2 class="foot">Guides</h2></header>
-                <ul>
-                    <li><a class="u-url" href="wireframes.html">Wireframes</a>
-                    <li><a class="u-url" href="styleguide.html">Styleguides</a></li> 
-                </ul> 
-        </div>
-
-        <div class="footer-section contact-us">
-            <h2 class="foot">Contact Us</h2>
-            <br>
-            <form action="index.html" method="post">
-              <input type="name" name="name" class="text-input contact-input" placeholder="Your name and surname...">
-              <textarea name="message" class="text-input contact-input" placeholder="Your feedback..."></textarea>
-              <button onclick="addComment()" type="submit" class="btn">
-                <i class="fas fa-comment-dots"></i> <a href="index.html"> Send</a>
-              </button>
-            </form>
-          </div>
-    </div>
-
-    <div class="footer-bottom">
-        &copy; interactivemedia.com | Designed by Lerato Mohapi
-    </div>
-</footer>
 </html>
