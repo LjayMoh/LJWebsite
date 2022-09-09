@@ -1,6 +1,6 @@
 .body {
     font-family: 'Times New Roman', Times, serif;
-    background: url(images/ana-paula-grimaldi-Nri_o3wJXZQ-unsplash.jpg) no-repeat;
+    background: url(/images/fernando-paredes-murillo-Xc6gtOwSMSA-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 150vh;
 }
@@ -168,6 +168,7 @@ a.active {
 
 .info{
     padding: 5px;
+    font-size: 13px;
 }
 
 h2 a{
@@ -566,9 +567,9 @@ h5{
 .week1{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 350vh;
+    height: 340vh;
 }
 
 .navi{
@@ -614,7 +615,8 @@ h5{
 }
 
 .art1 p{
-    margin: 15px;
+    margin: 0px 40px;
+    padding: 5px 5px;
     font-size: 19px;
     color: rgb(222, 220, 220);
 }
@@ -626,13 +628,13 @@ p span{
 .subject{
     font-size: 25px;
     color: rgb(240, 232, 221);
-    margin: 0px 10px;
+    margin: 0px 35px;
 }
 
 .subtitle{
     font-size: 20px;
     color: rgb(240, 232, 221);
-    margin: 0px 10px;
+    margin: 0px 35px;
 }
 
 .cite{
@@ -701,7 +703,7 @@ p span{
     .week1{
         font-family: 'Times New Roman', Times, serif;
         color: rgb(223, 223, 223);
-        background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+        background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
         height: 470vh;
     }
@@ -722,7 +724,7 @@ p span{
 .week6{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -739,7 +741,7 @@ p span{
 .week8{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -756,7 +758,7 @@ p span{
 .week13{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/luca-calderone-CGoJ4p0h7qs-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -771,7 +773,7 @@ p span{
 /*------------- Wireframe Page --------*/
 
 .wireframes{
-    background: url(images/Icone\ No\ 3.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -860,7 +862,7 @@ p span{
 .styleguide{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height:125vh;
 }
@@ -891,7 +893,7 @@ p span{
     .styleguide{
         font-family: 'Times New Roman', Times, serif;
         color: rgb(223, 223, 223);
-        background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+        background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
         height:170vh;
     }
@@ -907,7 +909,7 @@ p span{
 .reflection{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(223, 223, 223);
-    background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 198vh;
 }
@@ -938,7 +940,7 @@ p span{
     .reflection{
         font-family: 'Times New Roman', Times, serif;
         color: rgb(223, 223, 223);
-        background: url(images/altinay-dinc-LluELtL5mK4-unsplash.jpg) no-repeat;
+        background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
         height: 270vh;
     }
@@ -952,7 +954,7 @@ p span{
 /*------------- Art Page --------*/
 
 .art{
-    background: url(images/jon-tyson-QL0FAxaq2z0-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -960,7 +962,7 @@ p span{
 /*------------- Visuals Page --------*/
 
 .visuals{
-    background: url(images/isaac-smith-6EnTPvPPL6I-unsplash.jpg) no-repeat;
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
