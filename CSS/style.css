@@ -8,7 +8,7 @@
 .nav {
     background: rgba(163, 160, 160, 0.086);
     backdrop-filter: blur(2px);
-    height: 90px;
+    height: 80px;
 }
 
 .heading {
@@ -26,7 +26,7 @@
 nav ul {
     float: right;
     margin-right: 40px;
-    padding: 20px;
+    padding: 22px;
 }
 
 nav ul li{
@@ -42,7 +42,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: rgb(107, 230, 230);
-    border: 2px;
+    border: 5px;
     padding: 5px 10px;
     background-color: rgba(10, 58, 61, 0.84);
 }
@@ -953,17 +953,18 @@ aside{
     color: rgb(223, 223, 223);
     background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 198vh;
+    height: 120vh;
 }
 
 .critic{
-    background: rgba(30, 30, 30, 0.559);
+    background: rgba(30, 30, 30, 0.615);
     backdrop-filter: blur(1px);
 }
 
 .critic p{
-    margin: 10px;
+    margin: 0px 40px;
     font-size: 20px;
+    padding: 3px;
 }
 
 .critic p a{
@@ -1089,6 +1090,7 @@ aside{
     padding: 5px;
     margin: 0px 290px;
 }
+
 
 
 
