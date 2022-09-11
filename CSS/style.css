@@ -101,7 +101,6 @@ a.active {
     position: absolute;
     top: 50%;
     right: 40px;
-    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -110,7 +109,6 @@ a.active {
     position: absolute;
     top: 50%;
     left: 40px;
-    font-size: 1.5em;
     cursor: pointer;
 }
 
@@ -135,6 +133,10 @@ a.active {
     background: #cecece27;
     backdrop-filter: blur(1px);
     border-radius: 3px;
+}
+
+.open:hover{
+    cursor: pointer;
 }
 
 .card:hover{
@@ -230,15 +232,16 @@ h2 a:hover{
 }
 
 .site-wrapper{
-    width: 85%;
+    width: 80%;
     height: 360px;
-    margin: 20px 100px;
+    margin: 0px auto;
+    overflow: hidden;
 }
 
 .web{
-    width: 250px;
-    height: 100px;
-    margin: 0px 80px;
+    width: 300px;
+    height: 200px;
+    margin: 0px 30px;
     display: inline-block;
     background: rgba(212, 231, 236, 0.705);
 }
@@ -291,12 +294,21 @@ h5{
     color:rgb(82, 227, 227);
 }
 
-.reference p{
-    font-size: 15px
+.reference {
+    font-size: 15px;
+    margin: 0px 15px;
+}
+
+.def{
+    margin: 0 15px;
 }
 
 .contact{
     margin: 0px 5px;
+}
+
+.contact-us{
+    margin: 0px 25px;
 }
 
 .contact-input{
@@ -331,7 +343,7 @@ h5{
 }
 
 .footer-content{
-    height:390px;
+    height: 390px;
     display: flex;
     background-color: rgba(106, 106, 106, 0.873);
 }
@@ -341,13 +353,17 @@ h5{
     margin-left: 1px;
 }
 
+.contact{
+    margin: 0px 15px;
+}
+
 .contact span{
     font-size: 1.1em;
     margin-bottom: 10px;
 }
 
 .socials{
-    margin:0px 5px;
+    margin: 0px 15px;
 }
 
 .socials a{
@@ -365,12 +381,12 @@ h5{
 
 .socials a:hover{
     border: 1px solid white;
-    color: rgb(253, 104, 248);
+    color: rgb(216, 95, 212);
     transition: all .2s;
 }
 
 .def{
-    margin: 0px 2px;
+    margin: 0px 15px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -390,6 +406,10 @@ h5{
 }
 
 @media (max-width: 700px){
+    .body{
+        height: 180vh
+    }
+
     .heading {
         color: rgb(235, 234, 233);
         font-size: 25px;
@@ -436,74 +456,22 @@ h5{
         font-weight: bold;
     }
 
-    .title{
-        font-size: 30px;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        line-height: 100px;
-        margin: 50px auto;
-    }
-    
-    .next{
-        position: absolute;
-        top: 60%;
-        right: 20px;
-        font-size: 1.5em;
-        color:rgb(4, 45, 56);
-        cursor: pointer;
-    }
-    
-    .prev{
-        position: absolute;
-        top: 60%;
-        left: 20px;
-        font-size: 1.5em;
-        color:rgb(4, 45, 56);
-        cursor: pointer;
-    }
-    
-    .post-wrapper{
-        width: 90%;
-        height: 260px;
-        margin: 0px auto;
-        overflow: hidden;
-    }
-    
-    .post{
-        width: 400px;
-        height: 235px;
-        margin: 0px 30px;
-        display: inline-block;
-        background: #eef6f6b0;
-        border-radius: 3px;
+    h3 a{
+        margin: 2px 5px;
+        font-size: 15px;
+        color: rgb(47, 46, 46);
+        text-decoration: none;
     }
 
-    .slider-img{
-        width: 100%;
-        height: 100px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-    }
-
-    h2 a{
-        margin: 2px;
-        font-size: 13px;
-        color: rgb(4, 4, 4);
-    }
-
-    .site{
-        font-size: 30px;
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        text-align: center;
+    .site-slider {
+        position: relative;
     }
     
     .nxt{
         position: absolute;
         top: 48%;
-        right: 20px;
-        font-size: 1.5em;
+        right: 50px;
+        font-size: 2em;
         color:rgb(4, 45, 56);
         cursor: pointer;
     }
@@ -511,37 +479,34 @@ h5{
     .prv{
         position: absolute;
         top: 48%;
-        left: 20px;
-        font-size: 1.5em;
+        left: 50px;
+        font-size: 2em;
         color:rgb(4, 45, 56);
         cursor: pointer;
     }
 
-    .site-img{
-        width: 100%;
-        height: 150px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-    }
-    
-    h3 a{
-        margin: 5px 5px;
-        font-size: 15px;
-        color: rgb(47, 46, 46);
-        text-decoration: none;
-    }
-
     .site-wrapper{
-        width: 90%;
-        height: 200px;
+        width: 80%;
+        height: 360px;
+        margin: 0px auto;
+        overflow: hidden;
     }
     
     .web{
-        width: 100%;
+        width: 300px;
         height: 200px;
-        margin: 2px;
+        margin: 0px 30px;
         display: inline-block;
         background: rgba(212, 231, 236, 0.705);
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 100px;
+        margin: 50px auto;
     }
 
     .reference p{
@@ -641,8 +606,7 @@ p span{
     font-size: 20px;
     font-weight: bold;
     color: rgba(244, 239, 234, 0.864);
-    margin: 5px 5px;
-    padding: 2px;
+    margin: 0px 15px;
 }
 
 .foot{
@@ -709,7 +673,8 @@ p span{
     }
 
     .art1 p{
-        margin: 15px;
+        margin: 0px 15px;
+        padding-bottom: 5px;
         font-size: 15px;
         color: rgb(222, 220, 220);
     }
@@ -726,7 +691,7 @@ p span{
     color: rgb(223, 223, 223);
     background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 550vh;
 }
 
 .post2{
@@ -734,6 +699,75 @@ p span{
     font-weight: bold;
     line-height: 60px;
     margin: 0 20px;
+}
+
+.art2{
+    background: rgba(30, 30, 30, 0.516);
+    backdrop-filter: blur(2px);
+}
+
+.art2 p{
+    margin: 0px 40px;
+    padding: 5px 5px;
+    font-size: 19px;
+    color: rgb(222, 220, 220);
+}
+
+.png{
+    width: 350px;
+    height: 350px;
+    margin: 0px 90px;
+}
+
+aside{
+    width: 30%;
+    float: right;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    background-color: rgba(25, 23, 23, 0.851);
+}
+
+.subt{
+    text-decoration: underline;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .week6{
+        height: 640vh;
+    }
+
+    .art2 p{
+        margin: 0px 40px;
+        padding: 5px 5px;
+        font-size: 15px;
+        color: rgb(222, 220, 220);
+    }
+    
+    .png{
+        width: 300px;
+        height: 300px;
+        margin: 0px 2px;
+    }
+    
+    aside{
+        width: 40%;
+        float: right;
+        margin: 0px 5px;
+        padding: 0px 2px;
+        background-color: rgba(25, 23, 23, 0.851);
+    }
+
+    aside p{
+        font-size: 10px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
 
 /*------------- Week8 Page --------*/
@@ -775,7 +809,14 @@ p span{
 .wireframes{
     background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 170vh;
+}
+
+.wireframes p{
+    font-size: 19px;
+    margin: 0px 40px;
+    padding: 9px;
+    color: white;
 }
 
 .tag{
@@ -873,7 +914,8 @@ p span{
 }
  
 .guide p{
-    margin: 10px;
+    margin: 0px 40px;
+    padding: 2px;
     font-size: 20px;
 }
 
@@ -904,7 +946,7 @@ p span{
     }
 }
 
-/*------------- Reflections Page --------*/
+/*------------- Planning Page --------*/
 
 .reflection{
     font-family: 'Times New Roman', Times, serif;
@@ -967,7 +1009,86 @@ p span{
     height: 100vh;
 }
 
+/*------------- Blog Pages --------*/
 
+.pages{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.blogp{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 20px;
+}
+
+.week{
+    font-size: 25px;
+    color: rgb(240, 232, 221);
+    margin: 0px 35px;
+}
+
+.weeks{
+    background: rgba(30, 30, 30, 0.174);
+    backdrop-filter: blur(1px);
+    min-height: 100%;
+}
+
+.weeks p{
+    margin: 0px 40px;
+    padding: 5px 5px;
+    font-size: 19px;
+    color: rgb(222, 220, 220);
+}
+
+.link{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(60, 249, 246);
+    background-color: rgb(18, 18, 18);
+}
+
+.link:hover{
+    color: rgb(200, 250, 249);
+    margin: 0px 2px;
+}
+
+/*------------- Revised styleguide Pages --------*/
+
+.rev-style{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+
+/*------------- Revised Wireframe Page --------*/
+
+.rev-frames{
+    background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 180vh;
+}
+
+.rev-frames p{
+    font-size: 19px;
+    margin: 0px 40px;
+    padding: 9px;
+    color: white;
+}
+
+.text{
+    position: absolute;
+    font-size: 17.5px;
+    color: rgb(158, 238, 252);
+    padding: 5px;
+    margin: 0px 290px;
+}
 
 
 

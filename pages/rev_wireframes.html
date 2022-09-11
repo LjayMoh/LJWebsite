@@ -5,13 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revised Wireframes</title>
+    <script src="/JavaScript/design.js" defer></script>
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="rev-frames">
+        <header>
+            <nav class="navi">
+                <label for="wireframes" class="tag"> Revised Wireframes</label>
 
+                <input type="checkbox" id="check">
+
+                <label for="check" class="bars"><i class="fa-solid fa-bars"></i></label>
+
+                <ul>
+                    <li><a href="/pages/index.html" class="h-card"><i class="fas fa-home"></i> Homepage</a></li>
+                    <li><a class="h-card" href="/pages/visualizations.html"><i class="fas fa-chart-line"></i> Data Visuals</a></li>
+                    <li><a class="h-card" href="/pages/art.html"><i class="fas fa-palette"></i> Data-Art</a></li> 
+                    <li><a class="u-url" href="/pages/blogpages.html"><i class="fas fa-pager"></i> Blog Pages</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="frame-carousel" data-carousel>
+               <button class="carousel-button left" data-carousel-button="prev">&#10094;</i></button>
+               <button class="carousel-button right" data-carousel-button="next">&#10095;</i></button>
+                <ul data-slides>
+                   <li class="img-slide" data-active>
+                       <img src="/images/rev.homepage.png" alt="Revised Homepage wireframe" class="u-photo">
+                       <figcaption class="text">Homepage Wireframe</figcaption>
+                    </li>
+                   <li class="img-slide">
+                       <img src="/images/rev.BlogPosts.png" alt="Revised Blog posts wireframe" class="u-photo">
+                       <figcaption class="text">Blog posts Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                       <img src="/images/rev.PlanningDoc.png" alt="PlanningDoc wireframe" class="u-photo">
+                       <figcaption class="text">Planning Doc Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                        <img src="/images/rev.Styleguides.png" alt="Revised Styleguide wireframe" class="u-photo">
+                        <figcaption class="text">Styleguide Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                       <img src="/images/rev.wireframes.png" alt="Revised Wireframes wireframe" class="u-photo">
+                       <figcaption class="text">Wireframes Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                       <img src="/images/rev.dataArt.png" alt="Revised Data-Art wireframe" class="u-photo">
+                       <figcaption class="text">Data-Art Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                       <img src="/images/rev.dataVisuals.png" alt="Revised Data Visualization wireframe" class="u-photo">
+                       <figcaption class="text">Data Visuals Wireframe</figcaption>
+                    </li>
+                    <li class="img-slide">
+                        <img src="/images/rev.AllPosts.png" alt="Blog pages wireframe" class="u-photo">
+                        <figcaption class="text">Blog pages Wireframe</figcaption>
+                     </li>
+                </ul>
+            </div>
+            <br>
+            <br>
+
+            <h1 class="week">Reasons behind the designs</h1>
+            <p>
+                <span>Homepage wireframe</span>: The layout allows users to have options to navigate to other pages including links and sliders. 
+                The interface will include images to make it attractive and compliment the kind of information that is conveyed in the page. The left and right arrows will be buttons to allow the 
+                user to move the slider cards. There will be an autoplay slideshow for both the web design section and the blog posts section, the page will also include a new page which will show the user all the pages 
+                they are going to interact with by giving them a bit of information about the page. I chose this layout because it will keep the content in order and the user will have 
+                a clear understanding when they navigate the page that they are on the homepage because the interface will be very different from the one of other pages.
+            </p>
+            <p>
+                <span>Blog posts wireframe</span>: I chose this layout because the information will be neatly presented and legible with a simple  and effortless navigation.
+            </p>
+            <p>
+                <span>Planning documentation wireframe</span>: More like the style guide page, it will include a documentation and reflection on the design process of the charts and reasons behind my design choices.
+            </p>
+            <p>
+                <span>Styleguide wireframe</span>: I chose the same layout as the blog posts’ page because the page will include a lot of information that I want to keep legible and spaciously presented. 
+                It will include critical writing of my style choices and reasons behind the choices as well as how these choices have or had impacts on the design.
+            </p>
+            <p>
+                <span>Wireframes wireframe</span>: I went for the slider layout to keep the content in one place and let the user have time to look at the 
+                wireframes slide-by-slide. I chose this type of layout because there will not be too much text on the page, and the wireframes have enough information on their own. Then I will
+                include text which briefly explains my user experience design choices.
+            </p>
+            <p>
+                <span>Data-Art wireframe</span>: The layout will be the same as the data visualizations page layout, this is because I want the content to be spacious and well presented. 
+                There will be illustrations and more information about them on the side so that the user does not have to navigate down the page to read the information.
+            </p>
+            <p>
+                <span>Data Visualization wireframe</span>: The layout will have illustrations with supporting captions and information on the opposite side, I chose it because it will present the 
+                content legibly, the page will be appealing, and easy to navigate .
+            </p>
+            <p>
+                <span>Blog pages wireframe</span>: The layout will be the same as the blog posts layout because I want to keep the consistency in the website.
+            </p>
+        </main>
     </section>
 
     <footer>
@@ -20,7 +114,9 @@
                 <h4 class="ref"><span>Interactive</span>Media</h4>
                 <p class="def">Interactive Media is creative and mind-blowing ways that people share ideas and information
                   using innovated technology.</p>
+                <br>
                 <p class="def">LETS DIGITIZE :)</p>
+                <br>
                 <div class="contact">
                   <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
                 </div>
@@ -38,6 +134,7 @@
                         <li><a class="u-url" href="/pages/2ndpost.html">Week6</a></li>
                         <li><a class="u-url" href="/pages/3rdpost.html">Week8</a></li>
                         <li><a class="u-url" href="/pages/4thpost.html">Week13</a></li>
+                        <li><a class="u-url" href="/pages/blogpages.html">Blog Pages</a></li>
                     </ul>  
             </div>
     
