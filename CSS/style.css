@@ -1005,9 +1005,48 @@ aside{
 /*------------- Visuals Page --------*/
 
 .visuals{
+    font-family: 'Times New Roman', Times, serif;
     background: url(/images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 250vh;
+}
+
+#chart{
+    display: flex;
+    margin: 2rem 4rem;
+}
+
+#chart1{
+    box-shadow: 0 2px 8px rgb(4, 198, 215);
+    padding: 3rem;
+}
+
+.bar1 {
+    fill:rgb(8, 255, 255);
+}
+
+.label {
+    fill: rgb(255, 255, 255);
+}
+
+#chart2{
+    box-shadow: 0 2px 8px rgb(216, 95, 212);
+    padding: 3rem;
+}
+
+.bar2 {
+    fill:rgb(221, 73, 216);
+}
+
+.label2 {
+    fill: rgb(255, 255, 255);
+}
+
+.data{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin: 0 10rem;
+    padding-bottom: 2rem;
 }
 
 /*------------- Blog Pages --------*/

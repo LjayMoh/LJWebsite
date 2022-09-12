@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data-Visualizations</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="/JavaScript/visuals.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale@4" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-axis@3" defer></script>
+    <script src="/JavaScript/visuals.js" defer></script>
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
@@ -15,7 +17,7 @@
     <section class="visuals">
         <header>
             <nav class="navi">
-                <label for="visuals" class="tag"> Data Visualizaion</label>
+                <label for="visuals" class="tag"> Data Visualizations</label>
 
                 <input type="checkbox" id="check">
 
@@ -29,6 +31,24 @@
                 </ul>
             </nav>
         </header>
+
+        <main>
+            
+            <br>
+            <div id="chart">
+                <div id="chart1">
+                    <h1 class="data">Instagram users around Africa, by country & population (in millions)</h1>
+                    <svg id="svg1"></svg>
+                </div>
+            </div>
+
+            <div id="chart">
+                <div id="chart2">
+                    <h1 class="data">Unemployment rate (%) in SA by age in 2022</h1>
+                    <svg id="svg2"></svg>
+                </div>
+            </div>
+        </main>
     </section>
 
     <footer>
