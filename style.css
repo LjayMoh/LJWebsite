@@ -974,8 +974,8 @@ aside{
 }
 
 .critic{
-    background: rgba(30, 30, 30, 0.615);
-    backdrop-filter: blur(1px);
+    background: rgba(30, 30, 30, 0.793);
+    backdrop-filter: blur(2px);
 }
 
 .critic p{
@@ -1009,6 +1009,17 @@ aside{
         margin: 10px;
         font-size: 15px;
     }
+}
+
+
+/*------------- Interactive Planning Page --------*/
+
+.plan{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 /*------------- Art Page --------*/
@@ -1076,7 +1087,7 @@ aside{
     fill: rgb(255, 255, 255);
 }
 
-.data{
+.name{
     font-size: 1rem;
     color: rgb(255, 255, 255);
     margin: 0 5rem;
@@ -1090,11 +1101,16 @@ aside{
 }
 
 #data ul li{
+    margin-bottom: 1rem;
+    margin-left: 25px;
+    padding: 1rem;
     box-shadow: 0 2px 2px rgb(4, 198, 215);
+    width: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 

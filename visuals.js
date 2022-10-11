@@ -10,6 +10,15 @@ const DUMMY_DATA = [
     { id: 'd8', value: 2.3, region: 'Lesotho'},
 ];
 
+
+//API 
+async function getData(){
+  const api_url = "https://api.nasa.gov/planetary/earth/assets?lon=100.75&lat=1.5&date=2014-02-01&dim=0.15&api_key=DEMO_KEY";
+  const api_data = await fetch(api_url);
+  const api_json = await api_data.json();
+  //const DUMMY_DATA = api_json.slice(0, 5);
+  console.log(DUMMY_DATA);
+
 const MARGINS = {top: 10, bottom: 8};
 const CHART_WIDTH = 540;
 const CHART_HEIGHT = 500 - MARGINS.top - MARGINS.bottom;
@@ -123,11 +132,11 @@ const OTHER_DATA = [
   { id: 'r4', rate: 50.85, country: 'Italy'},
 ];
 
+let selectedData = OTHER_DATA;
+
 const Margins = {top: 10, bottom: 8};
 const ChartWidth = 550;
 const ChartHeight = 500  - Margins.top - Margins.bottom;
-
-let selectedData = OTHER_DATA;
 
 const x_Axis = d3.scaleBand().rangeRound([0, ChartWidth]).padding(0.3);
 const y_Axis = d3.scaleLinear().range([ChartHeight, 0]);
@@ -147,12 +156,12 @@ chart3
   .call(d3.axisBottom(x_Axis))
   .attr('transform', `translate(0, ${ChartHeight})`)
   .attr('color', '#FFFFFF')
-  .attr('font-size', 12);
+  .attr('font-size', 12)
 
 function renderChart() {
   chart3
     .selectAll('.bar3')
-    .data(selectedData)
+    .data(selectedData, (data) => data.id)
     .enter()
     .append('rect')
     .classed('bar3', true)
@@ -161,11 +170,15 @@ function renderChart() {
     .attr('x', data => x_Axis(data.country))
     .attr('y', data => y_Axis(data.rate));
   
-  chart3.selectAll('.bar3').data(selectedData).exit().remove()
+    chart3
+      .selectAll('.bar3')
+      .data(selectedData, (data) => data.id)
+      .exit()
+      .remove();
 
   chart3
     .selectAll('.label3')
-    .data(selectedData)
+    .data(selectedData, (data) => data.id)
     .enter()
     .append('text')
     .text((data) => data.rate)
@@ -174,14 +187,18 @@ function renderChart() {
     .attr('text-anchor', 'middle')
     .classed('label3', true);
 
-  chart3.selectAll('.label3'.data(selectedData)).exit().remove()
+    chart3
+      .selectAll('.label3')
+      .data(selectedData, (data) => data.id)
+      .exit()
+      .remove();
 }
 
 renderChart();
-
 let unselectedList = [];
 
-const countryTable = d3.select('#data')
+const countryTable = d3
+  .select('#data')
   .select('ul')
   .selectAll('li')
   .data(OTHER_DATA)
@@ -194,14 +211,19 @@ countryTable
   .append('input')
   .attr('type', 'checkbox')
   .attr('checked',true)
-  .on('change', (data) => {
-    if(unselectedList.indexOf(data.list) === -1) {
-      unselectedList.push(data.list);
-    } else {
-      unselectedList = unselectedList.filter(list => list !== data.list);
+  .on('change', (result, info) => {
+    if (unselectedList.indexOf(info.id) === -1){
+      unselectedList.push(info.id);
+    }
+    else {
+      unselectedList = unselectedList.filter((id) => id !== info.id);
     }
     selectedData = OTHER_DATA.filter(
-      (r) => unselectedList.indexOf(data.list) === -1
+      (r) => unselectedList.indexOf(r.id) === -1
     );
     renderChart();
   });
+
+}
+
+getData();
