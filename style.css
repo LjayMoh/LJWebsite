@@ -2,7 +2,7 @@
     font-family: 'Times New Roman', Times, serif;
     background: url(images/fernando-paredes-murillo-Xc6gtOwSMSA-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 150vh;
+    height: 160vh;
 }
 
 .nav {
@@ -35,13 +35,13 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 18px;
-    color:rgb(255, 255, 255);
+    font-size: 15x;
+    color:rgb(38, 243, 247);
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    color: rgb(107, 230, 230);
+    color:rgb(255, 255, 255);
     border: 5px;
     padding: 5px 10px;
     background-color: rgba(10, 58, 61, 0.84);
@@ -157,7 +157,7 @@ a.active {
     margin: 5px 5px;
     padding: 5px 5px;
     width: 100%;
-    height: 220px;
+    height: 200px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -172,15 +172,20 @@ a.active {
     font-size: 13px;
 }
 
-h2 a{
+.post i{
+    font-size: 13px;
+}
+
+.use a{
     margin: 2px;
     font-size: 15px;
     color: rgb(4, 4, 4);
+    text-decoration: none;
 }
 
-h2 a:hover{
+.use a:hover{
     color:rgb(5, 58, 58);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .site-slider {
@@ -232,14 +237,14 @@ h2 a:hover{
 
 .site-wrapper{
     width: 80%;
-    height: 360px;
+    height: 350px;
     margin: 0px auto;
     overflow: hidden;
 }
 
 .web{
     width: 300px;
-    height: 200px;
+    height: 190px;
     margin: 0px 30px;
     display: inline-block;
     background: rgba(212, 231, 236, 0.705);
@@ -259,25 +264,21 @@ h2 a:hover{
 .site-img:hover{
     width: 100%;
     height: 250px;
-    padding: 5px 5px;
+    padding: 2px 2px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
-h3 a{
-    margin: 15px 15px;
-    font-size: 20px;
+.what a{
+    margin: 5px 5px;
+    font-size: 18px;
     color: rgb(47, 46, 46);
     text-decoration: none;
 }
 
-h3 a:hover{
+.what a:hover{
     color:rgb(245, 251, 251);
     text-decoration: underline;
-}
-
-h5{
-    font-size: 15px;
 }
 
 .ref{
@@ -445,7 +446,7 @@ h5{
     }
 
     nav ul li a{
-        color: rgb(213, 204, 204);
+        color:rgb(38, 243, 247);
         font-size: 15px;
         text-transform: uppercase;
         font-weight: bold;
@@ -556,7 +557,7 @@ h5{
 }
 
 .navi ul li a:hover{
-    color: white;
+    color:rgb(255, 255, 255);
     margin-left: 3px;
     font-size: 18px;
 }
@@ -772,7 +773,7 @@ aside{
     color: rgb(223, 223, 223);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 490vh;
 }
 
 .post3{
@@ -781,6 +782,19 @@ aside{
     line-height: 60px;
     margin: 0 20px;
 }
+
+.art3{
+    background: rgba(30, 30, 30, 0.516);
+    backdrop-filter: blur(2px);
+}
+
+.art3 p{
+    margin: 0px 40px;
+    padding: 5px 5px;
+    font-size: 19px;
+    color: rgb(222, 220, 220);
+}
+
 
 #check{
     display: none;
@@ -870,14 +884,14 @@ aside{
     font-size: 3rem;
     top: 40%;
     z-index: 4;
-    color: rgb(18, 187, 216);
+    color: rgb(235, 250, 252);
     cursor: pointer;
 }
 
 .carousel-button:hover{
     color:rgb(0, 0, 0);
-    font-size: 2rem;
-    background-color: rgba(124, 226, 242, 0.958);
+    font-size: 3rem;
+    background-color: rgba(154, 218, 228, 0.958);
 }
 
 .left{
@@ -1015,7 +1029,7 @@ aside{
     font-family: 'Times New Roman', Times, serif;
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 250vh;
+    height: 300vh;
 }
 
 #chart{
@@ -1024,8 +1038,8 @@ aside{
 }
 
 #chart1{
-    box-shadow: 0 2px 8px rgb(4, 198, 215);
-    padding: 3rem;
+    box-shadow: 0 2px 6px rgb(4, 198, 215);
+    padding: 2.5rem;
 }
 
 .bar1 {
@@ -1037,8 +1051,8 @@ aside{
 }
 
 #chart2{
-    box-shadow: 0 2px 8px rgb(216, 95, 212);
-    padding: 3rem;
+    box-shadow: 0 2px 6px rgb(216, 95, 212);
+    padding: 2.5rem;
 }
 
 .bar2 {
@@ -1049,12 +1063,40 @@ aside{
     fill: rgb(255, 255, 255);
 }
 
+#chart3{
+    box-shadow: 0 2px 6px rgb(4, 198, 215);
+    padding: 2.5rem;
+}
+
+.bar3 {
+    fill:rgb(8, 255, 255);
+}
+
+.label3 {
+    fill: rgb(255, 255, 255);
+}
+
 .data{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
-    margin: 0 10rem;
+    margin: 0 5rem;
     padding-bottom: 2rem;
 }
+
+#data ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#data ul li{
+    box-shadow: 0 2px 2px rgb(4, 198, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
 
 #check{
     display: none;

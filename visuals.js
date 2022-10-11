@@ -1,3 +1,4 @@
+//First static graph #Chart 1
 const DUMMY_DATA = [
     { id: 'd1', value: 59.8, region: 'SA'},
     { id: 'd2', value: 33.4, region: 'Ghana'},
@@ -10,10 +11,10 @@ const DUMMY_DATA = [
 ];
 
 const MARGINS = {top: 10, bottom: 8};
-const CHART_WIDTH = 700;
-const CHART_HEIGHT = 600 - MARGINS.top - MARGINS.bottom;
+const CHART_WIDTH = 540;
+const CHART_HEIGHT = 500 - MARGINS.top - MARGINS.bottom;
 
-const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.2);
+const x = d3.scaleBand().rangeRound([0, CHART_WIDTH]).padding(0.3);
 const y = d3.scaleLinear().range([CHART_HEIGHT, 0]);
 
 const chartHolder = d3
@@ -31,7 +32,7 @@ chart1
   .call(d3.axisBottom(x))
   .attr('transform', `translate(0, ${CHART_HEIGHT})`)
   .attr('color', '#FFFFFF')
-  .attr('font-size', 12);
+  .attr('font-size', 11);
 
 chart1
   .selectAll('.bar1')
@@ -56,19 +57,21 @@ chart1
   .classed('label', true);
 
 
+//Second static graph #Chart 2
+
 const MY_DATA = [
-    { id: 'i1', percent: 63.9, age: '15-24'},
-    { id: 'i2', percent: 42.1, age: '25-34'},
-    { id: 'i3', percent: 29.4, age: '35-44'},
-    { id: 'i4', percent: 21.8, age: '45-54'},
-    { id: 'i5', percent: 12.2, age: '55-64'},
+  { id: 'i1', percent: 63.9, age: '15-24'},
+  { id: 'i2', percent: 42.1, age: '25-34'},
+  { id: 'i3', percent: 29.4, age: '35-44'},
+  { id: 'i4', percent: 21.8, age: '45-54'},
+  { id: 'i5', percent: 12.2, age: '55-64'},
 ];
 
 const margins = {top: 10, bottom: 8};
-const chartWidth = 700;
-const chartHeight = 500  - margins.top - margins.bottom;
+const chartWidth = 500;
+const chartHeight = 400  - margins.top - margins.bottom;
 
-const x_axis = d3.scaleBand().rangeRound([0, chartWidth]).padding(0.2);
+const x_axis = d3.scaleBand().rangeRound([0, chartWidth]).padding(0.3);
 const y_axis = d3.scaleLinear().range([chartHeight, 0]);
 
 const chartContainer = d3
@@ -111,3 +114,94 @@ chart2
   .classed('label2', true);
 
 
+//Third interactive graph #Chart 3
+
+const OTHER_DATA = [
+  { id: 'r1', rate: 60.92, country: 'France'},
+  { id: 'r2', rate: 52.58, country: 'Bangladesh'},
+  { id: 'r3', rate: 54.5, country: 'Thailand'},
+  { id: 'r4', rate: 50.85, country: 'Italy'},
+];
+
+const Margins = {top: 10, bottom: 8};
+const ChartWidth = 550;
+const ChartHeight = 500  - Margins.top - Margins.bottom;
+
+let selectedData = OTHER_DATA;
+
+const x_Axis = d3.scaleBand().rangeRound([0, ChartWidth]).padding(0.3);
+const y_Axis = d3.scaleLinear().range([ChartHeight, 0]);
+
+const ChartBox = d3
+  .select('#svg3')
+  .attr('width', ChartWidth)
+  .attr('height', ChartHeight  + Margins.top + Margins.bottom);
+
+x_Axis.domain(OTHER_DATA.map((r) => r.country));
+y_Axis.domain([0, d3.max(OTHER_DATA, r => r.rate) + 4])
+
+const chart3 = ChartBox.append('g');
+
+chart3
+  .append('g')
+  .call(d3.axisBottom(x_Axis))
+  .attr('transform', `translate(0, ${ChartHeight})`)
+  .attr('color', '#FFFFFF')
+  .attr('font-size', 12);
+
+function renderChart() {
+  chart3
+    .selectAll('.bar3')
+    .data(selectedData)
+    .enter()
+    .append('rect')
+    .classed('bar3', true)
+    .attr('width', x_Axis.bandwidth)
+    .attr('height', data => ChartHeight - y_Axis(data.rate))
+    .attr('x', data => x_Axis(data.country))
+    .attr('y', data => y_Axis(data.rate));
+  
+  chart3.selectAll('.bar3').data(selectedData).exit().remove()
+
+  chart3
+    .selectAll('.label3')
+    .data(selectedData)
+    .enter()
+    .append('text')
+    .text((data) => data.rate)
+    .attr('x', data => x_Axis(data.country) + x_Axis.bandwidth() / 2)
+    .attr('y', data => y_Axis(data.rate) - 10)
+    .attr('text-anchor', 'middle')
+    .classed('label3', true);
+
+  chart3.selectAll('.label3'.data(selectedData)).exit().remove()
+}
+
+renderChart();
+
+let unselectedList = [];
+
+const countryTable = d3.select('#data')
+  .select('ul')
+  .selectAll('li')
+  .data(OTHER_DATA)
+  .enter()
+  .append('li');
+
+countryTable.append('span').text((data) => data.country);
+
+countryTable
+  .append('input')
+  .attr('type', 'checkbox')
+  .attr('checked',true)
+  .on('change', (data) => {
+    if(unselectedList.indexOf(data.list) === -1) {
+      unselectedList.push(data.list);
+    } else {
+      unselectedList = unselectedList.filter(list => list !== data.list);
+    }
+    selectedData = OTHER_DATA.filter(
+      (r) => unselectedList.indexOf(data.list) === -1
+    );
+    renderChart();
+  });
