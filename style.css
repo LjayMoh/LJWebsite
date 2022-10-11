@@ -54,11 +54,11 @@ a.active {
 }
 
 .bars{
-    font-size: 25px;
+    font-size: 20px;
     float: right;
     margin-right: 40px;
-    padding: 19px;
-    line-height: 50px;
+    padding: 1px;
+    line-height: 10px;
     cursor: pointer;
     display: none;
 }
@@ -426,28 +426,28 @@ a.active {
     .nav {
         background: rgba(163, 160, 160, 0);
         backdrop-filter: blur(2px);
-        height: 45px;
+        height: 95px;
     }
 
     nav ul{
         position: fixed;
         width: 100%;
-        height: .5vh;
+        height: 12vh;
         text-align: center;
-        top: 55px;
+        top: 30px;
         left: -120%;
         transition: all 1.5s;
     }
 
     nav ul li{
         display:inline-block;
-        padding-bottom: 1px;
-        margin-top: 2px;
+        padding-bottom: 2px;
+        margin-top: 5px;
     }
 
     nav ul li a{
         color:rgb(38, 243, 247);
-        font-size: 15px;
+        font-size: 12px;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -502,7 +502,7 @@ a.active {
         color: rgb(0, 0, 0);
         font-weight: bold;
         line-height: 100px;
-        margin: 50px auto;
+        margin: 5px 25px;
     }
 
     .reference p{
@@ -800,6 +800,35 @@ aside{
     display: none;
 }
 
+@media (max-width: 700px){
+    .week8{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 700vh;
+    }
+    
+    .post3{
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 60px;
+        margin: 0 20px;
+    }
+    
+    .art3{
+        background: rgba(30, 30, 30, 0.516);
+        backdrop-filter: blur(2px);
+    }
+    
+    .art3 p{
+        margin: 0px 40px;
+        padding: 5px 5px;
+        font-size: 15px;
+        color: rgb(222, 220, 220);
+    }
+}
+
 /*------------- Week13 Page --------*/
 
 .week13{
@@ -907,6 +936,27 @@ aside{
 }
 
 @media (max-width: 700px){
+    .wireframes{
+        background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 200vh;
+    }
+    
+    .wireframes p{
+        font-size: 16px;
+        margin: 0px 40px;
+        padding: 9px;
+        color: white;
+    }
+    
+    .tag{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 50px;
+        margin: 0 40px;
+        color: rgb(203, 225, 230);
+    }
+
     .frame-carousel{
         width: 50%;
         height: 500px;
@@ -954,7 +1004,7 @@ aside{
         color: rgb(223, 223, 223);
         background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
-        height:170vh;
+        height:190vh;
     }
 
     .guide p{
@@ -1002,12 +1052,12 @@ aside{
         color: rgb(223, 223, 223);
         background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
-        height: 270vh;
+        height: 200vh;
     }
 
     .critic p{
         margin: 10px;
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -1118,6 +1168,28 @@ aside{
     display: none;
 }
 
+@media (max-width: 700px){
+    .visuals{
+        font-family: 'Times New Roman', Times, serif;
+        background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 350vh;
+    }
+
+    #data ul li{
+        margin-bottom: 1rem;
+        margin: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 2px rgb(4, 198, 215);
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+}
+
 /*------------- Blog Pages --------*/
 
 .pages{
@@ -1142,8 +1214,8 @@ aside{
 }
 
 .weeks{
-    background: rgba(30, 30, 30, 0.174);
-    backdrop-filter: blur(1px);
+    background: rgba(30, 30, 30, 0.704);
+    backdrop-filter: blur(2px);
     min-height: 100%;
 }
 
@@ -1170,6 +1242,15 @@ aside{
     display: none;
 }
 
+@media (max-width: 700px){
+    .weeks p{
+        margin: 0px 40px;
+        padding: 5px 5px;
+        font-size: 16px;
+        color: rgb(222, 220, 220);
+    } 
+}
+
 /*------------- Revised styleguide Pages --------*/
 
 .rev-style{
@@ -1182,6 +1263,16 @@ aside{
 
 #check{
     display: none;
+}
+
+@media (max-width: 700px){
+    .rev-style{
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(223, 223, 223);
+        background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 250vh;
+    }
 }
 
 /*------------- Revised Wireframe Page --------*/
@@ -1209,6 +1300,30 @@ aside{
 
 #check{
     display: none;
+}
+
+@media (max-width: 700px){
+    .rev-frames{
+        background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+        background-size: cover;
+        height: 220vh;
+    }
+
+    .rev-frames p{
+        font-size: 16px;
+        margin: 0px 40px;
+        padding: 9px;
+        color: white;
+    }
+
+    .text{
+        position: absolute;
+        font-size: 12px;
+        color: rgb(158, 238, 252);
+        padding: 6px;
+        margin: 0px 290px;
+    }
+    
 }
 
 
