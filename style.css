@@ -573,17 +573,11 @@ html{
     margin: 0 20px;
 }
 
-.art1{
-    background: rgba(30, 30, 30, 0.516);
-    backdrop-filter: blur(2px);
-    min-height: 100%;
-}
-
 .art1 p{
     margin: 0px 40px;
     padding: 5px 5px;
     font-size: 19px;
-    color: rgb(222, 220, 220);
+    color: rgb(255, 255, 255);
 }
 
 #top-butt{
@@ -697,11 +691,36 @@ p span{
         height: 470vh;
     }
 
+    #top-butt{
+        position: fixed;
+        bottom: 30px;
+        right: 120px;
+        height: 70px;
+        width: 70px;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgb(62, 255, 255);
+        cursor: pointer;
+    }
+    
+    #top{
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: rgb(234, 246, 248);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 25px;
+        color: rgb(43, 42, 42);
+    }
+
     .art1 p{
         margin: 0px 15px;
         padding-bottom: 5px;
         font-size: 15px;
-        color: rgb(222, 220, 220);
+        color: rgb(255, 255, 255);
     }
 
     #check:checked ~ ul{
@@ -726,16 +745,11 @@ p span{
     margin: 0 20px;
 }
 
-.art2{
-    background: rgba(30, 30, 30, 0.516);
-    backdrop-filter: blur(2px);
-}
-
 .art2 p{
     margin: 0px 40px;
     padding: 5px 5px;
     font-size: 19px;
-    color: rgb(222, 220, 220);
+    color: rgb(255, 255, 255);
 }
 
 .png{
@@ -754,6 +768,7 @@ aside{
 
 .subt{
     text-decoration: underline;
+    font-size: 18px;
 }
 
 #check{
@@ -769,7 +784,7 @@ aside{
         margin: 0px 40px;
         padding: 5px 5px;
         font-size: 15px;
-        color: rgb(222, 220, 220);
+        color: rgb(255, 255, 255);
     }
     
     .png{
@@ -812,16 +827,11 @@ aside{
     margin: 0 20px;
 }
 
-.art3{
-    background: rgba(30, 30, 30, 0.516);
-    backdrop-filter: blur(2px);
-}
-
 .art3 p{
     margin: 0px 40px;
     padding: 5px 5px;
     font-size: 19px;
-    color: rgb(222, 220, 220);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -845,16 +855,11 @@ aside{
         margin: 0 20px;
     }
     
-    .art3{
-        background: rgba(30, 30, 30, 0.516);
-        backdrop-filter: blur(2px);
-    }
-    
     .art3 p{
         margin: 0px 40px;
         padding: 5px 5px;
         font-size: 15px;
-        color: rgb(222, 220, 220);
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -875,16 +880,11 @@ aside{
     margin: 0 20px;
 }
 
-.art4{
-    background: rgba(30, 30, 30, 0.516);
-    backdrop-filter: blur(2px);
-}
-
 .art4 p{
     margin: 0px 40px;
     padding: 5px 5px;
     font-size: 19px;
-    color: rgb(222, 220, 220);
+    color: rgb(255, 255, 255);
 }
 
 .img-art4{
@@ -909,7 +909,7 @@ aside{
     font-size: 19px;
     margin: 0px 40px;
     padding: 9px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .tag{
@@ -993,7 +993,7 @@ aside{
         font-size: 16px;
         margin: 0px 40px;
         padding: 9px;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     
     .tag{
@@ -1021,16 +1021,12 @@ aside{
     background-size: cover;
     height:125vh;
 }
-
-.guide{
-    background: rgba(30, 30, 30, 0.6);
-    backdrop-filter: blur(1px);
-}
  
 .guide p{
     margin: 0px 40px;
     padding: 2px;
     font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .guide p a{
@@ -1057,6 +1053,7 @@ aside{
     .guide p{
         margin: 10px;
         font-size: 16px;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -1064,7 +1061,7 @@ aside{
 
 .reflection{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 120vh;
@@ -1096,7 +1093,7 @@ aside{
 @media (max-width: 700px){
     .reflection{
         font-family: 'Times New Roman', Times, serif;
-        color: rgb(223, 223, 223);
+        color: rgb(255, 255, 255);
         background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
         height: 200vh;
@@ -1113,7 +1110,7 @@ aside{
 
 .plan{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
@@ -1123,7 +1120,7 @@ aside{
 
 .d-art{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
@@ -1262,7 +1259,7 @@ aside{
 
 .pages{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
@@ -1281,17 +1278,11 @@ aside{
     margin: 0px 35px;
 }
 
-.weeks{
-    background: rgba(30, 30, 30, 0.704);
-    backdrop-filter: blur(2px);
-    min-height: 100%;
-}
-
 .weeks p{
     margin: 0px 40px;
     padding: 5px 5px;
     font-size: 19px;
-    color: rgb(222, 220, 220);
+    color: rgb(255, 255, 255);
 }
 
 .link{
@@ -1315,7 +1306,7 @@ aside{
         margin: 0px 40px;
         padding: 5px 5px;
         font-size: 16px;
-        color: rgb(222, 220, 220);
+        color: rgb(255, 255, 255);
     } 
 }
 
@@ -1323,7 +1314,7 @@ aside{
 
 .rev-style{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(223, 223, 223);
+    color: rgb(255, 255, 255);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
     height: 150vh;
@@ -1336,7 +1327,7 @@ aside{
 @media (max-width: 700px){
     .rev-style{
         font-family: 'Times New Roman', Times, serif;
-        color: rgb(223, 223, 223);
+        color: rgb(255, 255, 255);
         background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
         background-size: cover;
         height: 250vh;
@@ -1355,7 +1346,7 @@ aside{
     font-size: 19px;
     margin: 0px 40px;
     padding: 9px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .text{
@@ -1381,7 +1372,7 @@ aside{
         font-size: 16px;
         margin: 0px 40px;
         padding: 9px;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     .text{
@@ -1391,7 +1382,6 @@ aside{
         padding: 6px;
         margin: 0px 290px;
     }
-    
 }
 
 
