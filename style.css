@@ -836,7 +836,7 @@ aside{
     color: rgb(223, 223, 223);
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 240vh;
 }
 
 .post4{
@@ -844,6 +844,24 @@ aside{
     font-weight: bold;
     line-height: 60px;
     margin: 0 20px;
+}
+
+.art4{
+    background: rgba(30, 30, 30, 0.516);
+    backdrop-filter: blur(2px);
+}
+
+.art4 p{
+    margin: 0px 40px;
+    padding: 5px 5px;
+    font-size: 19px;
+    color: rgb(222, 220, 220);
+}
+
+.img-art4{
+    width: 60;
+    height: 80;
+    margin: 0px 150px;
 }
 
 #check{
@@ -1072,12 +1090,22 @@ aside{
     height: 100vh;
 }
 
+/*------------- Data-Art Planning Page --------*/
+
+.d-art{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(223, 223, 223);
+    background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 /*------------- Art Page --------*/
 
 .art{
     background: url(images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 150vh;
 }
 
 #check{
