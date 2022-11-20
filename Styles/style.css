@@ -916,6 +916,23 @@ aside{
     display: none;
 }
 
+@media (max-width: 700px){
+    .post5{
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 60px;
+        margin: 0 20px;
+    }
+    
+    .art5 p{
+        margin: 0px 40px;
+        padding: 5px 5px;
+        font-size: 19px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
 /*------------- Wireframe Page --------*/
 
 .wireframes{
@@ -1138,6 +1155,15 @@ aside{
 /*------------- Data-Art Planning Page --------*/
 
 .d-art{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    background: url(../images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*------------- Exam Data-Art Planning Page --------*/
+.exam{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     background: url(../images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg) no-repeat;
