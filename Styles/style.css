@@ -120,9 +120,9 @@ a.active {
 }
 
 .post{
-    width: 300px;
+    width: 250px;
     height: 350px;
-    margin: 0px 30px;
+    margin: 0px 20px;
     display: inline-block;
     background: #eef6f6b0;
     border-radius: 3px;
@@ -221,7 +221,7 @@ a.active {
     position: absolute;
     top: 48%;
     right: 100px;
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgb(63, 104, 104);
     cursor: pointer;
 }
@@ -654,11 +654,12 @@ p span{
     margin-bottom: 10px;
     font-size: 1.2em;
     color: rgb(221, 239, 243);
+    text-decoration: none;
 }
 
 .guides ul a:hover{
     color: black;
-    text-decoration: dotted;
+    text-decoration: underline;
     transition: all .2s;
 }
 
