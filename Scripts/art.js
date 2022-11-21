@@ -1,31 +1,31 @@
 /***Exam Data Art ***/
 
-let movieDataLink = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json'
+let movieDataLink = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json';
 
-let movieData 
+let movieData;
 
-let canvas = d3.select('#myCanvas')
-let tooltip = d3.select('#tooltip')
+let canvas = d3.select('#myCanvas');
+let tooltip = d3.select('#tooltip');
 
 let drawTreeMap = () => {
 
   let hierarchy = d3.hierarchy(movieData, (node) => {
-      return node['children']
+      return node['children'];
   })
   .sum((node) => {
-      return node['value']
+      return node['value'];
   })
   .sort((node1, node2) => {
       return node2['value'] - node1['value']
-  })
+  });
 
   let createTreeMap = d3.treemap()
-                        .size([1000, 900])
+                        .size([1000, 900]);
 
-  createTreeMap(hierarchy)
+  createTreeMap(hierarchy);
 
-  let movieSlates = hierarchy.leaves()
-  console.log(movieSlates)
+  let movieSlates = hierarchy.leaves();
+  console.log(movieSlates);
 
   let block = canvas
           .selectAll('g')
@@ -34,7 +34,7 @@ let drawTreeMap = () => {
           .append('g')
           .attr('transform', (movie) => {
             return 'translate(' + movie['x0'] + ', ' + movie['y0'] + ')'
-          })
+          });
 
   block
     .append('rect')
@@ -42,19 +42,19 @@ let drawTreeMap = () => {
     .attr('fill', (movie) => {
       let category = movie['data']['category']
       if (category === 'Action') {
-        return 'lightblue'
+        return 'lightblue';
       }else if (category === 'Drama') {
-        return 'brown'
+        return 'brown';
       }else if (category === 'Adventure') {
-        return 'orange'
+        return 'orange';
       }else if (category === 'Family') {
-        return 'khaki'
+        return 'khaki';
       }else if (category === 'Comedy') {
-        return 'tan'
+        return 'tan';
       }else if (category === 'Animation') {
-        return 'pink'
+        return 'pink';
       }else if (category === 'Biography') {
-        return 'green'
+        return 'green';
       }
     }).attr('data-name', (movie) => {
        return movie['data']['name']
@@ -86,7 +86,7 @@ let drawTreeMap = () => {
     .on('mouseout', (movie) => {
       tooltip.transition()
               .style('visibility', 'hidden')
-    })
+    });
     
 
   block
@@ -95,7 +95,7 @@ let drawTreeMap = () => {
        return movie['data']['name']
     })
     .attr('x', 5)
-    .attr('y', 20)
+    .attr('y', 20);
 }
 
 d3.json(movieDataLink).then(
